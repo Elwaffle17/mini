@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu | CodingNepal</title>
+    
+    <link rel="stylesheet" href="style_catalogos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Icon-Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+  </head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="index.html"><img src="../flare_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="Mac.html">Mac</a></li>
+        <li><a href="#">iPad</a></li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">AirPods</a></li>
+        <li>
+          <a href="#" class="desktop-item">Mas</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Mas</label>
+          <ul class="drop-menu">
+            
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Vision</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="desktop-item">2</a>
+          <input type="checkbox" id="showDrop2">
+          <label for="showDrop2" class="mobile-item">Informacion</label>
+          <ul class="drop-menu">
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Como Comprar</a></li>
+          </ul>
+        </li>
+        
+        
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+  <div class="container_buscador">
+        <div class="header">
+            <button id="search-icon-btn" class="search-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        
+        <div id="search-wrapper" class="search-wrapper">
+            <input type="text" id="buscador" placeholder="Buscar en el sitio...">
+            <div id="resultados"></div>
+        </div>
+    </div>
+
+
+    
+
+          <div class="container">
+        <header>
+            <div class="atras">
+        <a href="../index.html">
+        <span class="material-symbols-rounded">
+            arrow_back
+        </span>
+        </a>
+        <a class="a_atras" href="../index.html">Inicio /</a><a class="a_atras" href="#">Mac</a>
+    </div>
+
+    
+
+
+
+
+        <div class="h1_1">
+            <h1>Mac</h1>
+          </div>
+            
+        </header>
+
+        <aside class="filters">
+            <h2>Filtros</h2>
+            <div class="filter-group">
+                <label for="category-filter">Categoría</label>
+                <select id="category-filter">
+                    <option value="all">Todas</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">Precio Máximo: $<span id="price-value">3000</span></label>
+                <input type="range" id="price-filter" min="0" max="3000" value="3000" step="50">
+            </div>
+        </aside>
+
+        <main id="product-grid" class="product-grid">
+            </main>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Imagen del Producto">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price" class="price"></p>
+            <a id="whatsapp-share-button" class="whatsapp-button" href="#" target="_blank">
+                Compartir en WhatsApp
+            </a>
+        </div>
+    </div>
+
+  
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+573006792207&text=Hola%21%20Quisiera%20m%C3%A1s%20informacion." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+  
+
+
+
+
+    <div class="h1_1">
+      <h1>productos</h1>
+    </div>
+
+    <div class="cont_tarjetas_productos" >
+             <a class="tarjeta" href="A.html" id="listo">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-mac-nav-202503.png" alt="Samsung Galaxy A56">
+              <h3>Mac</h3>
+            </a>
+            <a class="tarjeta" href="S.html" >
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-ipad-nav-202405.png" alt="Samsung Galaxy S23">
+              <h3>iPad</h3>
+            </a>
+            
+            
+            <a class="tarjeta" href="Z.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-iphone-nav-202502_GEO_US.png" alt="Samsung Galaxy S23">
+              <h3>iPhone</h3>
+            </a>
+           
+            <a class="tarjeta" href="M.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-airpods-nav-202409.png" alt="Samsung Galaxy S23">
+              <h3>AirsPods</h3>
+            </a>
+            <a class="tarjeta" href="Todo_Celulares.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-watch-nav-202409.png" alt="Samsung Galaxy S23">
+              <h3>Watch</h3>
+            </a>
+            <a class="tarjeta" href="Todo_Celulares.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-vision-pro-nav-202401.png" alt="Samsung Galaxy S23">
+              <h3>Vision</h3>
+            </a>
+          </div>
+        
+
+
+    
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras en el ámbito digital. Nuestro objetivo es conectar personas y crear experiencias memorables.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Calle Falsa, Bogotá, Colombia</p>
+                <p><i class="fas fa-phone"></i> +57 310 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@tuempresa.com</p>
+            </div>
+
+           
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script src="script_catalogos.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+    // --- ¡IMPORTANTE! ---
+    // Coloca tu número de WhatsApp aquí, incluyendo el código de país, sin el símbolo '+' o '00'.
+    // Por ejemplo, para Colombia: 573001234567
+    const miNumeroWhatsApp = '+573006792207'; 
+
+    // --- Base de Datos de Productos ---
+    // Aquí puedes agregar, modificar o eliminar tus productos.
+    const productsData = [
+        {
+            id: 1,
+            name: 'Laptop Pro X',
+            price: 1500,
+            category: 'tecnologia',
+            image: 'https://via.placeholder.com/300x200/0000FF/FFFFFF?text=Laptop',
+            description: 'Una laptop potente para profesionales creativos y desarrolladores. Equipada con procesador de última generación y pantalla 4K.'
+        },
+        {
+            id: 2,
+            name: 'Sofá Confort',
+            price: 800,
+            category: 'hogar',
+            image: 'https://via.placeholder.com/300x200/FFC0CB/000000?text=Sofá',
+            description: 'Un sofá de tres plazas increíblemente cómodo, perfecto para noches de cine en familia. Tapizado en tela de alta resistencia.'
+        },
+        {
+            id: 3,
+            name: 'Camisa Casual',
+            price: 50,
+            category: 'ropa',
+            image: 'https://via.placeholder.com/300x200/90EE90/FFFFFF?text=Camisa',
+            description: 'Camisa de algodón orgánico, suave al tacto y con un corte moderno que se ajusta perfectamente.'
+        },
+        {
+            id: 4,
+            name: 'Smart TV 55"',
+            price: 1200,
+            category: 'tecnologia',
+            image: 'https://via.placeholder.com/300x200/FFA500/FFFFFF?text=Smart+TV',
+            description: 'Televisor inteligente con resolución 4K UHD, HDR y acceso a todas tus aplicaciones de streaming favoritas.'
+        },
+        {
+            id: 5,
+            name: 'Juego de Sábanas',
+            price: 80,
+            category: 'hogar',
+            image: 'https://via.placeholder.com/300x200/ADD8E6/000000?text=Sábanas',
+            description: 'Sábanas de 400 hilos que garantizan un descanso placentero y fresco durante toda la noche.'
+        },
+        {
+            id: 6,
+            name: 'Zapatillas Deportivas',
+            price: 120,
+            category: 'ropa',
+            image: 'https://via.placeholder.com/300x200/800080/FFFFFF?text=Zapatillas',
+            description: 'Zapatillas ligeras y flexibles, ideales para correr o para el uso diario. Tecnología de amortiguación avanzada.'
+        }
+    ];
+
+    // --- Selección de Elementos del DOM ---
+    const productGrid = document.getElementById('product-grid');
+    const categoryFilter = document.getElementById('category-filter');
+    const priceFilter = document.getElementById('price-filter');
+    const priceValue = document.getElementById('price-value');
+
+    const modal = document.getElementById('product-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalPrice = document.getElementById('modal-price');
+    const whatsappBtn = document.getElementById('whatsapp-share-button');
+    const closeButton = document.querySelector('.close-button');
+
+    // --- Funciones ---
+
+    // Función para mostrar los productos en la cuadrícula
+    function displayProducts(products) {
+        productGrid.innerHTML = ''; // Limpiar la cuadrícula
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.dataset.id = product.id; // Guardar el ID en el elemento
+
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p class="price">$${product.price}</p>
+                </div>
+            `;
+            productGrid.appendChild(productCard);
+        });
+    }
+
+    // Función para filtrar los productos y mostrarlos
+    function filterAndDisplayProducts() {
+        const category = categoryFilter.value;
+        const maxPrice = Number(priceFilter.value);
+
+        priceValue.textContent = maxPrice; // Actualizar el valor del precio en la UI
+
+        let filteredProducts = productsData;
+
+        // Filtrar por categoría
+        if (category !== 'all') {
+            filteredProducts = filteredProducts.filter(p => p.category === category);
+        }
+
+        // Filtrar por precio
+        filteredProducts = filteredProducts.filter(p => p.price <= maxPrice);
+
+        displayProducts(filteredProducts);
+    }
+
+    // Función para abrir el modal con la info del producto
+    function openModal(productId) {
+        const product = productsData.find(p => p.id === Number(productId));
+        if (!product) return;
+
+        modalImg.src = product.image;
+        modalImg.alt = product.name;
+        modalTitle.textContent = product.name;
+        modalDescription.textContent = product.description;
+        modalPrice.textContent = `$${product.price}`;
+
+        // Crear el mensaje y el enlace para WhatsApp
+        const message = `¡Hola! Me interesa este producto: ${product.name} - Precio: $${product.price}`;
+        const whatsappUrl = `https://wa.me/${miNumeroWhatsApp}?text=${encodeURIComponent(message)}`;
+        whatsappBtn.href = whatsappUrl;
+
+        modal.style.display = 'flex'; // Mostrar el modal
+    }
+
+    // --- Event Listeners ---
+
+    // Aplicar filtros cuando cambian
+    categoryFilter.addEventListener('change', filterAndDisplayProducts);
+    priceFilter.addEventListener('input', filterAndDisplayProducts);
+
+    // Abrir el modal al hacer clic en un producto
+    productGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.product-card');
+        if (card) {
+            openModal(card.dataset.id);
+        }
+    });
+
+    // Cerrar el modal
+    closeButton.addEventListener('click', () => modal.style.display = 'none');
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) { // Si se hace clic en el fondo oscuro
+            modal.style.display = 'none';
+        }
+    });
+
+    // --- Carga Inicial ---
+    displayProducts(productsData); // Mostrar todos los productos al cargar la página
+
+});
+    </script>
+
+</body>
+</html>
