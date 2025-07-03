@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu | CodingNepal</title>
+    
+    <link rel="stylesheet" href="style_catalogos.css">
+    <!--Icon-Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="index.html"><img src="../flare_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="Mac.html">Mac</a></li>
+        <li><a href="#">iPad</a></li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">AirPods</a></li>
+        <li>
+          <a href="#" class="desktop-item">Mas</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Mas</label>
+          <ul class="drop-menu">
+            
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Vision</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="desktop-item">2</a>
+          <input type="checkbox" id="showDrop2">
+          <label for="showDrop2" class="mobile-item">Informacion</label>
+          <ul class="drop-menu">
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Como Comprar</a></li>
+          </ul>
+        </li>
+        
+        
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+  <div class="container_buscador">
+        <div class="header">
+            <button id="search-icon-btn" class="search-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        
+        <div id="search-wrapper" class="search-wrapper">
+            <input type="text" id="buscador" placeholder="Buscar en el sitio...">
+            <div id="resultados"></div>
+        </div>
+    </div>
+
+     
+    
+
+         <main>
+            <div class="atras">
+        <a href="../index.html">
+        <span class="material-symbols-rounded">
+            arrow_back
+        </span>
+        </a>
+        <a class="a_atras" href="../index.html">Inicio /</a><a class="a_atras" href="#">Mac</a>
+    </div>
+
+    
+
+
+
+
+        <div class="h1_1">
+            <h1>Mac</h1>
+          </div>
+    <div class="filters-container">
+      <div class="filter-group">
+        <label for="category-filter">Filtrar por categoría:</label>
+        <select id="category-filter">
+          <option value="todos">Todas</option>
+          <option value="tecnologia">Tecnología</option>
+          <option value="hogar">Hogar</option>
+          <option value="deportes">Deportes</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="price-filter">Ordenar por valor:</label>
+        <select id="price-filter">
+          <option value="default">Por defecto</option>
+          <option value="low-to-high">Menor a Mayor</option>
+          <option value="high-to-low">Mayor a Menor</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+    </div>
+  </main>
+
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+
+      <div class="carousel">
+        <div class="carousel-images">
+        </div>
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+      </div>
+
+      <div class="product-info">
+        <h2 id="modal-product-name">Nombre del Producto</h2>
+        <p id="modal-product-description">Aquí va la descripción detallada del producto.</p>
+        <p class="price" id="modal-product-price">$0</p>
+        <button id="whatsapp-share-button" class="whatsapp-button">
+          <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+573006792207&text=Hola%21%20Quisiera%20m%C3%A1s%20informacion." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+  
+
+
+
+
+    <div class="h1_1">
+      <h1>productos</h1>
+    </div>
+
+    <div class="cont_tarjetas_productos" >
+             <a class="tarjeta" href="A.html" id="listo">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-mac-nav-202503.png" alt="Samsung Galaxy A56">
+              <h3>Mac</h3>
+            </a>
+            <a class="tarjeta" href="S.html" >
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-ipad-nav-202405.png" alt="Samsung Galaxy S23">
+              <h3>iPad</h3>
+            </a>
+            
+            
+            <a class="tarjeta" href="Z.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-iphone-nav-202502_GEO_US.png" alt="Samsung Galaxy S23">
+              <h3>iPhone</h3>
+            </a>
+           
+            <a class="tarjeta" href="M.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-airpods-nav-202409.png" alt="Samsung Galaxy S23">
+              <h3>AirsPods</h3>
+            </a>
+            <a class="tarjeta" href="Todo_Celulares.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-watch-nav-202409.png" alt="Samsung Galaxy S23">
+              <h3>Watch</h3>
+            </a>
+            <a class="tarjeta" href="Todo_Celulares.html">
+              <img class="img_tarjeta" src="../img_Catalogos/store-card-13-vision-pro-nav-202401.png" alt="Samsung Galaxy S23">
+              <h3>Vision</h3>
+            </a>
+          </div>
+        
+
+
+    
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras en el ámbito digital. Nuestro objetivo es conectar personas y crear experiencias memorables.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Calle Falsa, Bogotá, Colombia</p>
+                <p><i class="fas fa-phone"></i> +57 310 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@tuempresa.com</p>
+            </div>
+
+           
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script src="script_catalogos.js"></script>
+
+    <img src="img/catalogo 1/producto1/OIP.webp (1).webp" alt="">
+
+    <script>
+        
+            document.addEventListener('DOMContentLoaded', () => {
+
+    // --- BASE DE DATOS DE PRODUCTOS (SIMULADA) ---
+    // En una aplicación real, esto vendría de un servidor o una API.
+    const products = [
+        {
+            id: 1,
+            name: 'Laptop Pro X',
+            category: 'tecnologia',
+            price: 1200,
+            description: 'Una laptop potente con procesador de última generación, 16GB de RAM y 512GB SSD. Perfecta para profesionales y creativos.',
+            images: [
+                'img/catalogo 1/producto1/galaxy-z-flip6-features-colors-white-tb.webp',
+                'img/catalogo 1/producto1/OIP (1).webp',
+                'img/catalogo 1/producto1/OIP.webp'
+            ]
+        },
+        {
+            id: 2,
+            name: 'Smartphone Galaxy S25',
+            category: 'tecnologia',
+            price: 950,
+            description: 'El último smartphone con una cámara revolucionaria de 200MP, pantalla AMOLED de 120Hz y batería de larga duración.',
+            images: [
+                '../img_Catalogos/store-card-13-vision-pro-nav-202401.png',
+                'https://via.placeholder.com/600x400/333333/FFFFFF?text=Smartphone+2'
+            ]
+        },
+        {
+            id: 3,
+            name: 'Sillón Confort',
+            category: 'hogar',
+            price: 350,
+            description: 'Un sillón ergonómico y cómodo, tapizado en tela de alta calidad. Ideal para tu sala de estar.',
+            images: [
+                '../img_Catalogos/store-card-13-airpods-nav-202409.png',
+                'https://via.placeholder.com/600x400/666666/FFFFFF?text=Sillon+2',
+                'https://via.placeholder.com/600x400/CCCCCC/FFFFFF?text=Sillon+3'
+            ]
+        },
+        {
+            id: 4,
+            name: 'Set de Mancuernas',
+            category: 'deportes',
+            price: 150,
+            description: 'Set de mancuernas ajustables de 2 a 20 kg. Perfecto para entrenar en casa y tonificar tus músculos.',
+            images: [
+                'https://via.placeholder.com/600x400/DC3545/FFFFFF?text=Mancuernas'
+            ]
+        },
+        {
+            id: 5,
+            name: 'Cafetera Express',
+            category: 'hogar',
+            price: 80,
+            description: 'Prepara el café perfecto cada mañana con esta cafetera express de 15 bares de presión.',
+            images: [
+                'https://via.placeholder.com/600x400/6F4E37/FFFFFF?text=Cafetera+1',
+                'https://via.placeholder.com/600x400/444444/FFFFFF?text=Cafetera+2'
+            ]
+        },
+        {
+            id: 6,
+            name: 'Zapatillas Runner',
+            category: 'deportes',
+            price: 120,
+            description: 'Zapatillas de running con amortiguación avanzada para corredores de todos los niveles.',
+            images: [
+                'https://via.placeholder.com/600x400/17A2B8/FFFFFF?text=Zapatillas+1',
+                'https://via.placeholder.com/600x400/777777/FFFFFF?text=Zapatillas+2'
+            ]
+        }
+    ];
+
+    // --- ELEMENTOS DEL DOM ---
+    const productGrid = document.getElementById('product-grid');
+    const categoryFilter = document.getElementById('category-filter');
+    const priceFilter = document.getElementById('price-filter');
+    const modal = document.getElementById('product-modal');
+    const closeModalButton = document.querySelector('.close-button');
+    const modalProductName = document.getElementById('modal-product-name');
+    const modalProductDescription = document.getElementById('modal-product-description');
+    const modalProductPrice = document.getElementById('modal-product-price');
+    const whatsappShareButton = document.getElementById('whatsapp-share-button');
+    const carouselImages = document.querySelector('.carousel-images');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
+
+    let currentCarouselIndex = 0;
+    let currentProduct = null;
+
+    // --- FUNCIONES ---
+
+    /**
+     * Muestra los productos en la cuadrícula.
+     * @param {Array} productsToShow - El array de productos a mostrar.
+     */
+    function displayProducts(productsToShow) {
+        productGrid.innerHTML = ''; // Limpia la cuadrícula
+        productsToShow.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.dataset.productId = product.id; // Almacena el ID del producto
+            productCard.innerHTML = `
+                
+                
+                <div class="product-card-info">
+                    <img class="img_car" src="${product.images[0]}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p class="price">$${product.price}</p>
+                </div>
+            `;
+            productGrid.appendChild(productCard);
+        });
+    }
+
+    /**
+     * Aplica los filtros de categoría y precio.
+     */
+    function applyFilters() {
+        let filteredProducts = [...products];
+        const category = categoryFilter.value;
+        const priceSort = priceFilter.value;
+
+        // Filtrar por categoría
+        if (category !== 'todos') {
+            filteredProducts = filteredProducts.filter(p => p.category === category);
+        }
+
+        // Ordenar por precio
+        if (priceSort === 'low-to-high') {
+            filteredProducts.sort((a, b) => a.price - b.price);
+        } else if (priceSort === 'high-to-low') {
+            filteredProducts.sort((a, b) => b.price - a.price);
+        }
+
+        displayProducts(filteredProducts);
+    }
+
+    /**
+     * Muestra el modal con la información de un producto.
+     * @param {number} productId - El ID del producto a mostrar.
+     */
+    function showModal(productId) {
+        currentProduct = products.find(p => p.id === productId);
+        if (!currentProduct) return;
+
+        // Llenar la información del modal
+        modalProductName.textContent = currentProduct.name;
+        modalProductDescription.textContent = currentProduct.description;
+        modalProductPrice.textContent = `$${currentProduct.price}`;
+
+        // Llenar el carrusel
+        carouselImages.innerHTML = '';
+        currentProduct.images.forEach(imgUrl => {
+            const img = document.createElement('img');
+            img.src = imgUrl;
+            img.alt = currentProduct.name;
+            carouselImages.appendChild(img);
+        });
+
+        // Mostrar/ocultar botones del carrusel si hay más de una imagen
+        const hasMultipleImages = currentProduct.images.length > 1;
+        prevButton.style.display = hasMultipleImages ? 'block' : 'none';
+        nextButton.style.display = hasMultipleImages ? 'block' : 'none';
+
+        currentCarouselIndex = 0;
+        updateCarousel();
+
+        modal.classList.add('active');
+    }
+
+    /**
+     * Actualiza la posición del carrusel.
+     */
+    function updateCarousel() {
+        const offset = -currentCarouselIndex * 100;
+        carouselImages.style.transform = `translateX(${offset}%)`;
+    }
+
+    // --- EVENT LISTENERS ---
+
+    // Aplicar filtros cuando cambian los <select>
+    categoryFilter.addEventListener('change', applyFilters);
+    priceFilter.addEventListener('change', applyFilters);
+
+    // Abrir el modal al hacer clic en un producto
+    productGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.product-card');
+        if (card) {
+            const productId = parseInt(card.dataset.productId, 10);
+            showModal(productId);
+        }
+    });
+
+    // Cerrar el modal
+    closeModalButton.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) { // Cierra solo si se hace clic en el fondo
+            modal.classList.remove('active');
+        }
+    });
+
+    // Controles del carrusel
+    nextButton.addEventListener('click', () => {
+        currentCarouselIndex = (currentCarouselIndex + 1) % currentProduct.images.length;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentCarouselIndex = (currentCarouselIndex - 1 + currentProduct.images.length) % currentProduct.images.length;
+        updateCarousel();
+    });
+
+    // Botón de compartir en WhatsApp
+    whatsappShareButton.addEventListener('click', () => {
+        if (!currentProduct) return;
+
+        // Reemplaza "TUNUMERO" con tu número de teléfono real con el código de país (ej: 573001234567)
+        const tuNumero = '+573006792207';
+
+        const message = encodeURIComponent(
+            `¡Hola! Me interesa este producto:\n\n*${currentProduct.name}*\n*Precio:* $${currentProduct.price}\n\nMe gustaría más información.`
+        );
+
+        // Si tienes un número específico, usa la primera URL. Si no, la segunda abrirá la lista de contactos del usuario.
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${tuNumero}&text=${message}`;
+        // const whatsappURL = `https://api.whatsapp.com/send?text=${message}`;
+
+        window.open(whatsappURL, '_blank');
+    });
+
+    // --- INICIALIZACIÓN ---
+    displayProducts(products); // Muestra todos los productos al cargar la página
+});
+
+    </script>
+
+</body>
+</html>
